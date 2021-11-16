@@ -1,0 +1,86 @@
+[*]
+[*] GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
+[*] Tue Nov 16 01:33:32 2021
+[*]
+[dumpfile] "/home/icarosix/WinData/Cursos/Arquitectura de computadores/CaravelRV-projectII/verilog/dv/io_ports/io_ports.vcd"
+[dumpfile_mtime] "Tue Nov 16 00:48:05 2021"
+[dumpfile_size] 193526659
+[savefile] "/home/icarosix/WinData/Cursos/Arquitectura de computadores/CaravelRV-projectII/verilog/dv/io_ports/gtkconf.gtkw"
+[timestart] 195974000
+[size] 1916 1041
+[pos] -1 -1
+*-20.000000 199212500 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] io_ports_tb.
+[treeopen] io_ports_tb.uut.
+[treeopen] io_ports_tb.uut.mprj.
+[treeopen] io_ports_tb.uut.soc.
+[sst_width] 344
+[signals_width] 158
+[sst_expanded] 1
+[sst_vpaned_height] 307
+@28
+io_ports_tb.uut.mprj.mprj.wb_clk_i
+io_ports_tb.uut.mprj.mprj.wb_rst_i
+@22
+io_ports_tb.uut.mprj.mprj.wdata[31:0]
+io_ports_tb.uut.mprj.mprj.rdata[31:0]
+io_ports_tb.uut.mprj.mprj.wbs_dat_i[31:0]
+io_ports_tb.uut.mprj.mprj.wbs_dat_o[31:0]
+io_ports_tb.uut.mprj.mprj.wbs_adr_i[31:0]
+@28
+io_ports_tb.uut.mprj.mprj.wbs_done
+io_ports_tb.uut.mprj.mprj.valid
+io_ports_tb.uut.mprj.mprj.addr_valid
+@c00022
+io_ports_tb.uut.mprj.mprj.wstrb[3:0]
+@28
+(0)io_ports_tb.uut.mprj.mprj.wstrb[3:0]
+(1)io_ports_tb.uut.mprj.mprj.wstrb[3:0]
+(2)io_ports_tb.uut.mprj.mprj.wstrb[3:0]
+(3)io_ports_tb.uut.mprj.mprj.wstrb[3:0]
+@1401200
+-group_end
+@c00022
+io_ports_tb.uut.mprj.mprj.output_reg[31:0]
+@28
+(0)io_ports_tb.uut.mprj.mprj.output_reg[31:0]
+(1)io_ports_tb.uut.mprj.mprj.output_reg[31:0]
+(2)io_ports_tb.uut.mprj.mprj.output_reg[31:0]
+(3)io_ports_tb.uut.mprj.mprj.output_reg[31:0]
+(4)io_ports_tb.uut.mprj.mprj.output_reg[31:0]
+(5)io_ports_tb.uut.mprj.mprj.output_reg[31:0]
+(6)io_ports_tb.uut.mprj.mprj.output_reg[31:0]
+(7)io_ports_tb.uut.mprj.mprj.output_reg[31:0]
+(8)io_ports_tb.uut.mprj.mprj.output_reg[31:0]
+(9)io_ports_tb.uut.mprj.mprj.output_reg[31:0]
+(10)io_ports_tb.uut.mprj.mprj.output_reg[31:0]
+(11)io_ports_tb.uut.mprj.mprj.output_reg[31:0]
+(12)io_ports_tb.uut.mprj.mprj.output_reg[31:0]
+(13)io_ports_tb.uut.mprj.mprj.output_reg[31:0]
+(14)io_ports_tb.uut.mprj.mprj.output_reg[31:0]
+(15)io_ports_tb.uut.mprj.mprj.output_reg[31:0]
+(16)io_ports_tb.uut.mprj.mprj.output_reg[31:0]
+(17)io_ports_tb.uut.mprj.mprj.output_reg[31:0]
+(18)io_ports_tb.uut.mprj.mprj.output_reg[31:0]
+(19)io_ports_tb.uut.mprj.mprj.output_reg[31:0]
+(20)io_ports_tb.uut.mprj.mprj.output_reg[31:0]
+(21)io_ports_tb.uut.mprj.mprj.output_reg[31:0]
+(22)io_ports_tb.uut.mprj.mprj.output_reg[31:0]
+(23)io_ports_tb.uut.mprj.mprj.output_reg[31:0]
+(24)io_ports_tb.uut.mprj.mprj.output_reg[31:0]
+(25)io_ports_tb.uut.mprj.mprj.output_reg[31:0]
+(26)io_ports_tb.uut.mprj.mprj.output_reg[31:0]
+(27)io_ports_tb.uut.mprj.mprj.output_reg[31:0]
+(28)io_ports_tb.uut.mprj.mprj.output_reg[31:0]
+(29)io_ports_tb.uut.mprj.mprj.output_reg[31:0]
+(30)io_ports_tb.uut.mprj.mprj.output_reg[31:0]
+(31)io_ports_tb.uut.mprj.mprj.output_reg[31:0]
+@1401200
+-group_end
+@22
+io_ports_tb.uut.mprj.mprj.input_reg[31:0]
+io_ports_tb.uut.soc.soc.cpu_adr_o[31:0]
+@23
+io_ports_tb.uut.soc.soc.cpu_dat_i[31:0]
+[pattern_trace] 1
+[pattern_trace] 0
