@@ -54,18 +54,26 @@ void main()
 	reg_mprj_datal = 0xAB600000;
 
 
-  uint32_t * p = (uint32_t *) &reg_mprj_slave;
+  uint32_t * p = (uint32_t *) &reg_mprj_slave; 
+/*
+  0x3000 0000 -> inpput_regA
+  0x3000 0004 -> inpput_regB
+  0x3000 0008 -> output_reg
+*/
 
-  uint32_t in;
+  uint32_t inA;
+  uint32_t inB;
   uint32_t out;
 
-  in = 0x15;
+  inA = 5;
+  inB = 6;
 
-  p[0] = in; 
-  out  = p[1]; 
-  in = 0x25;
-  p[0] = in; 
-  out  = p[1]; 
+out = inA+inB;
+
+  p[0] = inA;  //*(p) = inA;
+  p[1] = inB;  //*(p+1) = inB;
+  out  = p[2]; 
+  p[0] = out;
 
   /* Testbench $finish condition stops the simulation*/
   reg_mprj_datal = 0xAB610000;
