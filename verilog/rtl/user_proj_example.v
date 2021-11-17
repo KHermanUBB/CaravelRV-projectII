@@ -77,13 +77,15 @@ module user_proj_example #(
     output [2:0] irq
 );
 
-    localparam INPUT_ADDR  = 0;
-    localparam OUTPUT_ADDR = 1;
+    localparam INPUTA_ADDR  = 0;
+    localparam INPUTB_ADDR  = 1;
+    localparam OUTPUT_ADDR  = 2;
 
     wire clk;
     wire rst;
 
-    reg  [31:0] input_reg;
+    reg  [31:0] input_regA;
+    reg  [31:0] input_regB;
     reg  [31:0] output_reg;
 
     reg         wbs_done;
@@ -115,11 +117,17 @@ always@(posedge clk) begin
 			wbs_done <= 0;
 			if (valid && addr_valid)  begin     
 				case(wbs_adr_i[7:2])   
-					INPUT_ADDR: 
+					INPUTA_ADDR: 
  						       begin	
-                                   rdata <= input_reg;
+                                   rdata <= input_regA;
 		                           if(wstrb[0])
-		                             input_reg <= wdata;
+		                             input_regA <= wdata;
+						       end            
+  				INPUTB_ADDR: 
+ 						       begin	
+                                   rdata <= input_regB;
+		                           if(wstrb[0])
+		                             input_regB <= wdata;
 						       end            
           OUTPUT_ADDR: 
  						begin	
@@ -137,7 +145,7 @@ always@(posedge clk) begin
 /* assign output reg to input reg*/
 always@(posedge clk) begin
 
-  output_reg <= ~input_reg;
+  output_reg <= input_regA + input_regB ;
 
 end 
 
